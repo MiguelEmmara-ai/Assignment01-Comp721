@@ -9,6 +9,10 @@
     <!DOCTYPE html>
     <html lang="en">
 
+    <?php
+    // Set Time Zone To New Zealand
+    date_default_timezone_set('Pacific/Auckland'); ?>
+
     <?php include('header.php'); ?>
 
     <body>
@@ -47,7 +51,10 @@
                 <div class="mb-3">
                     <label for="statusCode" class="col-sm-2 col-form-label">Date</label>
                     <div class="col-sm-10">
-                        <input type="date" name="date" value=i d="date">
+                        <?php
+                        $date = date("Y-m-d");
+                        ?>
+                        <input type="date" name="date" value=<?php echo $date; ?> d="date">
                     </div>
                 </div>
                 <div class="mb-3">
