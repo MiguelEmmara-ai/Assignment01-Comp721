@@ -10,6 +10,6 @@ Database Connection File In PHP
 <?php
 $host = "localhost";
 $user = "root";
-$pswd = "Password123";
+$pswd = "";
 $dbnm = "webdev_aut";
 ?>
