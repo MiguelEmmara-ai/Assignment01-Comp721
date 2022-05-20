@@ -33,7 +33,8 @@ output in response to a user’s search request.
 
                     if (
                         !empty($_GET[$searchKeyword]) ||
-                        $searchKeyword == null
+                        $searchKeyword == null ||
+                        $searchKeyword == " "
                     ) {
                         echo '<div class="container d-flex justify-content-center">';
                         echo '<div class="row">';
