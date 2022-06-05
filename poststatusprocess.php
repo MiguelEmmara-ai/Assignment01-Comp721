@@ -75,7 +75,7 @@ corresponding HTML output in response to the user’s request.
                         $status_code = $_POST["statusCode"];
                         $status_content = $_POST["status"];
                         $share = $_POST["gridRadios"];
-                        $input_date = $_POST["date"];
+                        $input_date = date('Y-m-d', strtotime($_POST['date']));
 
                         // Array Permission Type
                         $permissionList = [];
